@@ -49,28 +49,51 @@
 
 // -Get element by class name ----------------------------------
 
-var li = document.getElementsByTagName('li');
-console.log(li);
-console.log(li[1]);
-li[1].textContent = 'Hello 2';
-li[1].style.fontWeight = 'bold';
-// items[1].style.backgroundColor = 'yellow';
+// var li = document.getElementsByTagName('li');
+// console.log(li);
+// console.log(li[1]);
+// li[1].textContent = 'Hello 2';
+// li[1].style.fontWeight = 'bold';
+// // items[1].style.backgroundColor = 'yellow';
 
 
-for(let i = 0; i<li.length; i++){
-    li[i].style.backgroundColor = '#f4f4f4';
-}
-li[0].style.color = "rgb(200,200,100)";
-li[2].style.color = "rgb(0,255,100)";
-li[3].style.color = "rgb(200,25,100)";
+// for(let i = 0; i<li.length; i++){
+//     li[i].style.backgroundColor = '#f4f4f4';
+// }
+// li[0].style.color = "rgb(200,200,100)";
+// li[2].style.color = "rgb(0,255,100)";
+// li[3].style.color = "rgb(200,25,100)";
 
-for(let i = 0; i<li.length; i++){
-    li[i].style.fontWeight = 'bold';
-}
+// for(let i = 0; i<li.length; i++){
+//     li[i].style.fontWeight = 'bold';
+// }
+
+// // after adding new li element ---
+// document.getElementsByClassName('list-group-item2')[0].style.listStyle = 'none';
+// document.getElementsByClassName('list-group-item2')[0].textContent = 'Hello 5';
+
+// document.getElementsByTagName('li')[4].textContent = 'Hello 5 by tag';
+// document.getElementsByTagName('li')[4].style.color = 'rgb(250, 100, 55)';
 
 // after adding new li element ---
-document.getElementsByClassName('list-group-item2')[0].style.listStyle = 'none';
-document.getElementsByClassName('list-group-item2')[0].textContent = 'Hello 5';
+// document.getElementsByClassName('list-group-item2')[0].style.listStyle = 'none';
+// document.getElementsByClassName('list-group-item2')[0].textContent = 'Hello 5';
 
-document.getElementsByTagName('li')[4].textContent = 'Hello 5 by tag';
-document.getElementsByTagName('li')[4].style.color = 'rgb(250, 100, 55)';
+// Query Selector ----------------------
+
+let header = document.querySelector('#main-header');
+header.style.borderBottom = 'solid 10px #eead';
+
+let input = document.querySelector('input');
+input.value = 'Hello World'; 
+
+let items = document.querySelector('.list-group-item');
+
+let secondItem = document.querySelector('.list-group-item:nth-child(2)');
+secondItem.style.backgroundColor = 'green';
+
+let thirdItem = document.querySelector('.list-group-item:nth-child(3)');
+thirdItem.style.display = 'none';
+
+// QuerySelectorAll =---------------------
+
