@@ -81,19 +81,28 @@
 
 // Query Selector ----------------------
 
-let header = document.querySelector('#main-header');
-header.style.borderBottom = 'solid 10px #eead';
+// let header = document.querySelector('#main-header');
+// header.style.borderBottom = 'solid 10px #eead';
 
-let input = document.querySelector('input');
-input.value = 'Hello World'; 
+// let input = document.querySelector('input');
+// input.value = 'Hello World'; 
 
-let items = document.querySelector('.list-group-item');
+// let items = document.querySelector('.list-group-item');
 
-let secondItem = document.querySelector('.list-group-item:nth-child(2)');
-secondItem.style.backgroundColor = 'green';
+// let secondItem = document.querySelector('.list-group-item:nth-child(2)');
+// secondItem.style.backgroundColor = 'green';
 
-let thirdItem = document.querySelector('.list-group-item:nth-child(3)');
-thirdItem.style.display = 'none';
+// let thirdItem = document.querySelector('.list-group-item:nth-child(3)');
+// thirdItem.style.display = 'none';
 
 // QuerySelectorAll =---------------------
 
+let secondItem = document.querySelectorAll('li:nth-child(2)');
+secondItem[0].style.color = 'green';
+secondItem[0].style.fontWeight = 'bold';
+
+let odd = document.querySelectorAll('li:nth-child(odd)');
+
+for(let i =0; i<odd.length; i++){
+    odd[i].style.backgroundColor = 'green';
+}
