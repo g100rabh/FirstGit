@@ -24,3 +24,24 @@ headerTitle.textContent = 'Hello';
 headerTitle.innerText = 'Goodbye';
 let header = document.getElementById('main-header');
 header.style.borderBottom = 'solid 3px #000'
+
+// Get element by class name
+
+var items = document.getElementsByClassName('list-group-item');
+console.log(items);
+// console.log(items[1]);
+// items[1].textContent = 'Hello 2';
+// items[1].style.fontWeight = 'bold';
+// // items[1].style.backgroundColor = 'yellow';
+
+
+// for(let i = 0; i<items.length; i++){
+//     items[i].style.backgroundColor = '#f4f4f4';
+// }
+// items[0].style.color = "rgb(200,200,100)";
+// items[2].style.color = "rgb(0,255,100)";
+// items[3].style.color = "rgb(200,25,100)";
+
+// for(let i = 0; i<items.length; i++){
+//     items[i].style.fontWeight = 'bold';
+// }
