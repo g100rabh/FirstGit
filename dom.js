@@ -13,7 +13,7 @@
 // console.log(document.links);
 // console.log(document.images);
 
-//---------------Selectors-------------------------
+// ---------------Selectors-------------------------
 // 1. Get element by Id.
 
 // console.log(document.getElementById('header-title'));
@@ -97,12 +97,84 @@
 
 // QuerySelectorAll =---------------------
 
-let secondItem = document.querySelectorAll('li:nth-child(2)');
-secondItem[0].style.color = 'green';
-secondItem[0].style.fontWeight = 'bold';
+// let secondItem = document.querySelectorAll('li:nth-child(2)');
+// secondItem[0].style.color = 'green';
+// secondItem[0].style.fontWeight = 'bold';
 
-let odd = document.querySelectorAll('li:nth-child(odd)');
+// let odd = document.querySelectorAll('li:nth-child(odd)');
 
-for(let i =0; i<odd.length; i++){
-    odd[i].style.backgroundColor = 'green';
-}
+// for(let i =0; i<odd.length; i++){
+//     odd[i].style.backgroundColor = 'green';
+// }
+
+//------------------------------
+// creating nodes and modifying
+
+// 1. parentElement 
+let itemList = document.querySelector('#items');
+// console.log(itemList.parentElement);
+// itemList.parentElement.style.backgroundColor = '#f4f4f4';
+
+// 2. lastelementchild
+
+// console.log(itemList.lastElementChild);
+// itemList.lastElementChild.textContent = 'Hello 4';
+
+// 3. lastChild
+
+// console.log(itemList.lastChild);
+
+// 4. createChild 
+
+
+
+// 5. firstchild element 
+
+// console.log(itemList.firstElementChild);
+
+// 6. firstChild
+
+// console.log(itemList.firstChild);
+
+// 7. next Sibiling
+
+// console.log(itemList.nextSibling);
+
+// 8. next element sibiling 
+
+// console.log(itemList.nextElementSibling);
+
+// 9. perivous sibiling
+
+// console.log(itemList.previousSibling);
+
+// 10. previous element sibiling 
+
+// console.log(itemList.previousElementSibling);
+
+// 11. create element
+
+let newDiv = document.createElement('div');
+
+// add class 
+newDiv.className = 'hello';
+
+// add id
+newDiv.id = 'hello1';
+
+// 12. Add attribute
+newDiv.setAttribute('title', 'Hello Div');
+
+// 13. create text node
+let newDivText = document.createTextNode('Hello World');
+
+// 14. append child
+
+newDiv.appendChild(newDivText);
+
+let container = document.querySelector('header .container');
+let h1 = document.querySelector('header h1');
+
+console.log(newDiv);
+
+container.insertBefore(newDiv, h1);
